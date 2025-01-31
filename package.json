@@ -1,7 +1,6 @@
 {
-  "name": "diw-cafeteria",
+  "name": "cafeteria",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,23 +8,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "autoprefixer": "^10.4.20",
-    "gulp-cli": "^3.0.0",
-    "gulp-postcss": "^10.0.0",
-    "normalize.css": "^8.0.1"
-  },
+  "description": "",
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
     "gulp": "^4.0.2",
     "gulp-avif": "^1.1.1",
-    "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
-    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.0",
     "gulp-webp": "^4.0.1",
     "sass": "^1.83.4"
   },
   "browserslist": [
-    "IE 10"
+    "last 1 version",
+    ">1%"
   ]
 }

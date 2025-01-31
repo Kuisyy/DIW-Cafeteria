@@ -6,6 +6,7 @@ const autoprefixer  = require('autoprefixer')
 function css(done) {
  //compilar sass
 
+
  //pasos: 1 - identificar archivo, 2 - Compilarla, 3 - Guardar el .css
  src('src/scss/app.scss')
    .pipe(sass())
@@ -17,6 +18,7 @@ function css(done) {
 }
 
 const imagemin = require("gulp-imagemin");
+
 
 function imagenes() {
  return src("src/img/**/*")
