@@ -1,4 +1,5 @@
-@use 'base';
-@use 'header';
-
-
+@use 'base'; //Primero base para tener acceso a variables y mixins
+@use 'header'; // No hace falta poner ni la _ delante de header ni la extensión.
+@use 'inicio';
+@use 'footer';
+@use 'internas';

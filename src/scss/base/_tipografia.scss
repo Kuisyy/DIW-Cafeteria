@@ -32,6 +32,18 @@ h2 {
    }
 }
 
+.heading-blanco {
+   @extend h2; //Para que herede las propiedades de h2
+   //Ahora reescribo lo que quiero cambiar
+   color: v.$blanco;
+   span {
+     color: v.$blanco;
+   }
+   &::after {
+     display: none; //Para que no aparezca la imagen del grano de café
+   }
+ }
+
 h3 {
    font-size: 3.2rem;
 }
