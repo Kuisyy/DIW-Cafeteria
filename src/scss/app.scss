@@ -1,5 +1,6 @@
-@use 'base'; //Primero base para tener acceso a variables y mixins
 @use 'header'; // No hace falta poner ni la _ delante de header ni la extensión.
-@use 'inicio';
-@use 'footer';
+@use 'base'; //Cargaría el archivo index que se encuentre en la carpeta base.
+@use 'inicio'; //Cargaría el archivo index que se encuentre en la carpeta base.
+@use 'footer'; //Cargaría el archivo index que se encuentre en la carpeta base.
 @use 'internas';
+@use "EstiGaleria";

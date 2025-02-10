@@ -1,15 +1,15 @@
 @use 'base/variables' as v; // No vale sólo con poner variables cómo cuando están en la misma carpeta
-//, tengo que darle la ruta (no es relativa ni absoluta, pero gulp la encuentra) 
+                            //, tengo que darle la ruta (no es relativa ni absoluta, pero gulp la encuentra) 
 @use 'base/mixins' as m;
+
 
 header{ 
     padding: 5rem 0;
-    position: relative;
+    position: relative; //
+    // Todo este before es para que la imagen de fondo no se vea mas oscura.
     @include m.tablet {
         min-height: 70rem; //Para que la imagen de fondo sea más grande en tablet o superior.  
      }
-    //
-    // Todo este before es para que la imagen de fondo no se vea mas oscura.
     &::before{ //& es para que al convertir a CSS no ponga un espacio en blanco entre header y ::before
         content: '';
         background-color: v.$negro ;
@@ -29,20 +29,25 @@ header{
             text-transform: uppercase;
             margin-top: 5rem; //Para separar el h1 del contenido superior en dispositivos pequeños.
             @include m.tablet {
-              min-height: 10rem;// en dispositivos más grandes la separación debe ser aún mayor.
+              margin-top: 10rem;// en dispositivos más grandes la separación debe ser aún mayor.
             }
-          }
-          
+        }
+       
+    
     }
+
 }
+
 //Header de la pagina de inicio.
 .header-inicio{
     background-image: url(../img/header_inicio.jpg); // Importante la ruta hay que hacerla relativa al archivo app.css de la carpeta build/css que es donde se encuentra el codigo CSS que es el que entiende el navegador.
 }
 
 .header-nosotros{
- background-image: url(../img/header_nosotros.jpg);
- background-repeat: no-repeat;
-background-size: cover;
-}
+    background-image: url(../img/header_nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
 
+
+ 

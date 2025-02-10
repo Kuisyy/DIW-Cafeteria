@@ -7,8 +7,8 @@
    @include m.tablet{
        padding: 10rem;
    }
-
-   .testimonial{
+}
+.testimonial{
     background-color: v.$cafeClaro;
     padding: 2rem 4rem;
     max-width: 50rem; //En pantallas grandes no quiero que ocupe todo el ancho,
@@ -23,10 +23,3 @@
         font-family: v.$fuente_cursiva;
     }
 }
-}
-.margin-negativo-10{
-    margin-top: -10rem;
- }
- .bg-white{
-    background-color: v.$blanco;
- }

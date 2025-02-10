@@ -1,6 +1,5 @@
-@use 'base/variables' as v;
-@use 'base/mixins' as m;
-
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 .iconos{
    margin-top: 5rem; // Separación entre los iconos y el párrafo superior
    .listado-iconos{
@@ -15,9 +14,8 @@
                color: v.$primario;
            }
        }
-       
-       @include m.tablet {
-           @include m.grid(3, 2rem);
-       }
+       @include m.tablet{
+        @include m.grid(3,2rem); //Puedo usar un mixin dentro de otro mixin
+    }
    }
 }
